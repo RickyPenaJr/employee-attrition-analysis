@@ -1,5 +1,6 @@
 # Employee Attraction / Retention Prediction
-![analytics-banner2](https://github.com/user-attachments/assets/59e12b5d-b0a1-4b24-96bb-a50d1eb7b678)
+![Employee-Attrition](https://github.com/user-attachments/assets/dd9b5455-50ac-4186-b23a-5d60b935479e)
+
 
 
 <br>
