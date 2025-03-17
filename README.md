@@ -7,7 +7,7 @@
 <br>
 
 ## Project Description
-Enter Text Here...
+A data-driven project that analyzes HR data to predict employee attrition. By uncovering key turnover factors, it helps guide better retention strategies and demonstrates an end-to-end approach to people analytics.
 
 <br>
 <br>
