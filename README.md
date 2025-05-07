@@ -220,4 +220,4 @@ GROUP BY WorkLifeBalance, Attrition;
 
 **Ricky Peña Jr.**  
 🔗 [rickypenajr.github.io](https://rickypenajr.github.io)  
-🐙 [GitHub](https://github.com/rickypenajr) • [LinkedIn](https://linkedin.com/in/rickypenajr)
+🌐 [GitHub](https://github.com/rickypenajr) • [LinkedIn](https://linkedin.com/in/rickypenajr)
