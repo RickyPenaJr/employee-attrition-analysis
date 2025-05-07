@@ -232,8 +232,6 @@ GROUP BY WorkLifeBalance, Attrition;
 ### Years at Company vs Attrition  
 ![Years at Company vs Attrition](src/years_at_company.png)
 
-### Attrition Risk Clusters  
-![Attrition Risk Clusters](src/attrition_clusters.png)
 
 ---
 
