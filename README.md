@@ -58,7 +58,6 @@ employee_attrition_project/
 - Overtime vs attrition heatmap
 - Satisfaction score distributions
 
-## 🔍 Analysis Questions & SQL Insights
 
 ## 🔍 Analysis Questions & SQL Insights
 
@@ -216,6 +215,25 @@ FROM employees
 GROUP BY WorkLifeBalance, Attrition;
 ```
 ✅ Those with poor work-life balance had higher attrition.
+
+---
+
+## 📊 Visualizations
+
+### Attrition by Job Role  
+![Attrition by Job Role](src/attrition_by_jobrole.png)
+
+### Monthly Income by Attrition  
+![Monthly Income by Attrition](src/income_by_attrition.png)
+
+### Job Satisfaction vs Attrition  
+![Job Satisfaction vs Attrition](src/satisfaction_by_attrition.png)
+
+### Years at Company vs Attrition  
+![Years at Company vs Attrition](src/years_at_company.png)
+
+### Attrition Risk Clusters  
+![Attrition Risk Clusters](src/attrition_clusters.png)
 
 ---
 
