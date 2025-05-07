@@ -74,7 +74,8 @@ GROUP BY Department;
 ```
 ✅ Sales department shows the highest attrition.
 
-
+<br>
+<br>
 
 #### 3. Does overtime correlate with attrition?
 ```sql
@@ -82,7 +83,8 @@ SELECT OverTime, Attrition, COUNT(*) FROM employees GROUP BY OverTime, Attrition
 ```
 ✅ Most employees who left were working overtime.
 
-
+<br>
+<br>
 
 #### 4. What’s the average monthly income of those who left vs stayed?
 ```sql
@@ -90,7 +92,8 @@ SELECT Attrition, AVG(MonthlyIncome) FROM employees GROUP BY Attrition;
 ```
 ✅ Employees who left had lower average income.
 
-
+<br>
+<br>
 
 #### 5. Which job roles have the highest turnover?
 ```sql
@@ -100,7 +103,8 @@ GROUP BY JobRole;
 ```
 ✅ Sales Executives and Lab Technicians show the most attrition.
 
-
+<br>
+<br>
 
 #### 6. How does job satisfaction affect attrition?
 ```sql
@@ -111,7 +115,8 @@ GROUP BY JobSatisfaction;
 ```
 ✅ Most who left had job satisfaction ratings of 1 or 2.
 
-
+<br>
+<br>
 
 #### 7. Do employees with fewer years at the company leave more?
 ```sql
@@ -119,7 +124,8 @@ SELECT Attrition, AVG(YearsAtCompany) FROM employees GROUP BY Attrition;
 ```
 ✅ Yes — they averaged fewer years at the company.
 
-
+<br>
+<br>
 
 #### 8. Are certain education fields more prone to attrition?
 ```sql
@@ -130,7 +136,8 @@ GROUP BY EducationField;
 ```
 ✅ Life Sciences and Medical fields had the most attrition.
 
-
+<br>
+<br>
 
 #### 9. What is the average age of employees who left vs stayed?
 ```sql
@@ -138,7 +145,8 @@ SELECT Attrition, AVG(Age) FROM employees GROUP BY Attrition;
 ```
 ✅ Employees who left were slightly younger on average.
 
-
+<br>
+<br>
 
 ### 10. Does marital status influence attrition?
 ```sql
@@ -149,7 +157,8 @@ GROUP BY MaritalStatus;
 ```
 ✅ Single employees showed higher attrition counts.
 
-
+<br>
+<br>
 
 #### 11. Is there a pattern between distance from home and attrition?
 ```sql
@@ -157,7 +166,8 @@ SELECT Attrition, AVG(DistanceFromHome) FROM employees GROUP BY Attrition;
 ```
 ✅ Employees who left tended to live farther from work.
 
-
+<br>
+<br>
 
 #### 12. What is the attrition breakdown by gender?
 ```sql
@@ -165,7 +175,8 @@ SELECT Gender, Attrition, COUNT(*) FROM employees GROUP BY Gender, Attrition;
 ```
 ✅ Males had slightly more attritions than females.
 
-
+<br>
+<br>
 
 #### 13. What stock option levels are most common among employees who stay?
 ```sql
@@ -176,7 +187,8 @@ GROUP BY StockOptionLevel;
 ```
 ✅ Most retained employees had Stock Option Level 1.
 
-
+<br>
+<br>
 
 #### 14. How does the number of companies worked impact attrition?
 ```sql
@@ -186,7 +198,8 @@ GROUP BY NumCompaniesWorked, Attrition;
 ```
 ✅ Employees who worked at more companies were more likely to leave.
 
-
+<br>
+<br>
 
 #### 15. Do employees with better work-life balance leave less?
 ```sql
@@ -196,8 +209,8 @@ GROUP BY WorkLifeBalance, Attrition;
 ```
 ✅ Those with poor work-life balance had higher attrition.
 
-
-
+<br>
+<br>
 
 ---
 
