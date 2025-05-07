@@ -26,8 +26,8 @@ employee_attrition_project/
 ├── data/                  # Raw dataset (CSV)
 ├── db/                    # SQL schema and analysis queries
 ├── src/                   # Python analysis scripts
-├── dashboard/             # (Optional) Streamlit dashboard
-├── notebooks/             # (Optional) Jupyter notebooks
+├── dashboard/             # PowerBI dashboard
+├── notebooks/             # Jupyter notebooks
 └── README.md
 ```
 
