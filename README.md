@@ -57,7 +57,7 @@ Here are key business questions answered with SQL queries and summarized insight
 
 ---
 
-#### 1. What is the overall attrition rate?
+### 1. What is the overall attrition rate?
 ```sql
 SELECT Attrition, COUNT(*) AS Count FROM employees GROUP BY Attrition;
 ```
@@ -66,7 +66,7 @@ SELECT Attrition, COUNT(*) AS Count FROM employees GROUP BY Attrition;
 <br>
 <br>
 
-#### 2. Which department has the highest attrition?
+### 2. Which department has the highest attrition?
 ```sql
 SELECT Department, SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attritions
 FROM employees
@@ -77,7 +77,7 @@ GROUP BY Department;
 <br>
 <br>
 
-#### 3. Does overtime correlate with attrition?
+### 3. Does overtime correlate with attrition?
 ```sql
 SELECT OverTime, Attrition, COUNT(*) FROM employees GROUP BY OverTime, Attrition;
 ```
@@ -86,7 +86,7 @@ SELECT OverTime, Attrition, COUNT(*) FROM employees GROUP BY OverTime, Attrition
 <br>
 <br>
 
-#### 4. What’s the average monthly income of those who left vs stayed?
+### 4. What’s the average monthly income of those who left vs stayed?
 ```sql
 SELECT Attrition, AVG(MonthlyIncome) FROM employees GROUP BY Attrition;
 ```
@@ -95,7 +95,7 @@ SELECT Attrition, AVG(MonthlyIncome) FROM employees GROUP BY Attrition;
 <br>
 <br>
 
-#### 5. Which job roles have the highest turnover?
+### 5. Which job roles have the highest turnover?
 ```sql
 SELECT JobRole, SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attritions
 FROM employees
@@ -106,7 +106,7 @@ GROUP BY JobRole;
 <br>
 <br>
 
-#### 6. How does job satisfaction affect attrition?
+### 6. How does job satisfaction affect attrition?
 ```sql
 SELECT JobSatisfaction, COUNT(*) AS Count
 FROM employees
@@ -118,7 +118,7 @@ GROUP BY JobSatisfaction;
 <br>
 <br>
 
-#### 7. Do employees with fewer years at the company leave more?
+### 7. Do employees with fewer years at the company leave more?
 ```sql
 SELECT Attrition, AVG(YearsAtCompany) FROM employees GROUP BY Attrition;
 ```
@@ -127,7 +127,7 @@ SELECT Attrition, AVG(YearsAtCompany) FROM employees GROUP BY Attrition;
 <br>
 <br>
 
-#### 8. Are certain education fields more prone to attrition?
+### 8. Are certain education fields more prone to attrition?
 ```sql
 SELECT EducationField, COUNT(*) AS Total, 
        SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attritions
@@ -139,7 +139,7 @@ GROUP BY EducationField;
 <br>
 <br>
 
-#### 9. What is the average age of employees who left vs stayed?
+### 9. What is the average age of employees who left vs stayed?
 ```sql
 SELECT Attrition, AVG(Age) FROM employees GROUP BY Attrition;
 ```
@@ -160,7 +160,7 @@ GROUP BY MaritalStatus;
 <br>
 <br>
 
-#### 11. Is there a pattern between distance from home and attrition?
+### 11. Is there a pattern between distance from home and attrition?
 ```sql
 SELECT Attrition, AVG(DistanceFromHome) FROM employees GROUP BY Attrition;
 ```
@@ -169,7 +169,7 @@ SELECT Attrition, AVG(DistanceFromHome) FROM employees GROUP BY Attrition;
 <br>
 <br>
 
-#### 12. What is the attrition breakdown by gender?
+### 12. What is the attrition breakdown by gender?
 ```sql
 SELECT Gender, Attrition, COUNT(*) FROM employees GROUP BY Gender, Attrition;
 ```
@@ -178,7 +178,7 @@ SELECT Gender, Attrition, COUNT(*) FROM employees GROUP BY Gender, Attrition;
 <br>
 <br>
 
-#### 13. What stock option levels are most common among employees who stay?
+### 13. What stock option levels are most common among employees who stay?
 ```sql
 SELECT StockOptionLevel, COUNT(*) 
 FROM employees 
@@ -190,7 +190,7 @@ GROUP BY StockOptionLevel;
 <br>
 <br>
 
-#### 14. How does the number of companies worked impact attrition?
+### 14. How does the number of companies worked impact attrition?
 ```sql
 SELECT NumCompaniesWorked, Attrition, COUNT(*) 
 FROM employees
@@ -201,7 +201,7 @@ GROUP BY NumCompaniesWorked, Attrition;
 <br>
 <br>
 
-#### 15. Do employees with better work-life balance leave less?
+### 15. Do employees with better work-life balance leave less?
 ```sql
 SELECT WorkLifeBalance, Attrition, COUNT(*) 
 FROM employees
