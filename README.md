@@ -6,14 +6,59 @@
 
 
 ## Project Description
-A data-driven project that analyzes HR data to predict employee attrition. By uncovering key turnover factors, it helps guide better retention strategies and demonstrates an end-to-end approach to people analytics.
+Analyze employee attrition using SQL and Python with IBM's HR Analytics dataset.
 
-<br>
-<br>
+---
 
+## 📂 Project Structure
 
-## Data Analysis
-Coming Soon...
+```
+employee_attrition_project/
+├── data/                  # Raw dataset (CSV)
+├── db/                    # SQL schema and analysis queries
+├── src/                   # Python analysis scripts
+├── dashboard/             # (Optional) Streamlit dashboard
+├── notebooks/             # (Optional) Jupyter notebooks
+└── README.md
+```
 
-<br>
-<br>
+---
+
+## 🧰 Technologies
+
+- Python (Pandas, Matplotlib, Seaborn)
+- SQL (SQLite/PostgreSQL)
+- CSV data format
+- Optional: Streamlit, Scikit-learn
+
+---
+
+## 📊 Key SQL Queries
+
+- Attrition rate by department
+- Average income by role
+- Job satisfaction vs overtime
+- Years at company grouped by attrition
+- Income group analysis
+
+---
+
+## 📈 Python Analysis
+
+- Attrition by department (bar chart)
+- Overtime vs attrition heatmap
+- Satisfaction score distributions
+
+---
+
+## 📎 Dataset Source
+
+[IBM HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+
+---
+
+## 👤 Author
+
+**Ricky Peña Jr.**  
+🔗 [rickypenajr.github.io](https://rickypenajr.github.io)  
+🐙 [GitHub](https://github.com/rickypenajr) • [LinkedIn](https://linkedin.com/in/rickypenajr)
