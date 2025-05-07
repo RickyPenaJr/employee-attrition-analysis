@@ -51,6 +51,8 @@ employee_attrition_project/
 
 ## 🔍 Analysis Questions & SQL Insights
 
+## 🔍 Analysis Questions & SQL Insights
+
 Here are key business questions answered with SQL queries and summarized insights:
 
 ---
@@ -126,6 +128,93 @@ FROM employees
 GROUP BY EducationField;
 ```
 ✅ Life Sciences and Medical fields had the most attrition.
+
+---
+
+## 📊 Visualizations
+
+Here are some key visualizations included in the project:
+
+### 📌 Attrition by Job Role
+![Attrition by Job Role](src/attrition_by_jobrole.png)
+
+### 📌 Monthly Income by Attrition
+![Monthly Income by Attrition](src/income_by_attrition.png)
+
+### 📌 Job Satisfaction vs Attrition
+![Job Satisfaction vs Attrition](src/satisfaction_by_attrition.png)
+
+### 📌 Years at Company vs Attrition
+![Years at Company vs Attrition](src/years_at_company.png)
+
+---
+
+### 9. What is the average age of employees who left vs stayed?
+```sql
+SELECT Attrition, AVG(Age) FROM employees GROUP BY Attrition;
+```
+✅ Employees who left were slightly younger on average.
+
+---
+
+### 10. Does marital status influence attrition?
+```sql
+SELECT MaritalStatus, COUNT(*) AS Total, 
+       SUM(CASE WHEN Attrition = 'Yes' THEN 1 ELSE 0 END) AS Attritions
+FROM employees
+GROUP BY MaritalStatus;
+```
+✅ Single employees showed higher attrition counts.
+
+---
+
+### 11. Is there a pattern between distance from home and attrition?
+```sql
+SELECT Attrition, AVG(DistanceFromHome) FROM employees GROUP BY Attrition;
+```
+✅ Employees who left tended to live farther from work.
+
+
+
+### 12. What is the attrition breakdown by gender?
+```sql
+SELECT Gender, Attrition, COUNT(*) FROM employees GROUP BY Gender, Attrition;
+```
+✅ Males had slightly more attritions than females.
+
+
+
+### 13. What stock option levels are most common among employees who stay?
+```sql
+SELECT StockOptionLevel, COUNT(*) 
+FROM employees 
+WHERE Attrition = 'No'
+GROUP BY StockOptionLevel;
+```
+✅ Most retained employees had Stock Option Level 1.
+
+
+
+### 14. How does the number of companies worked impact attrition?
+```sql
+SELECT NumCompaniesWorked, Attrition, COUNT(*) 
+FROM employees
+GROUP BY NumCompaniesWorked, Attrition;
+```
+✅ Employees who worked at more companies were more likely to leave.
+
+
+
+### 15. Do employees with better work-life balance leave less?
+```sql
+SELECT WorkLifeBalance, Attrition, COUNT(*) 
+FROM employees
+GROUP BY WorkLifeBalance, Attrition;
+```
+✅ Those with poor work-life balance had higher attrition.
+
+---
+
 
 
 ---
