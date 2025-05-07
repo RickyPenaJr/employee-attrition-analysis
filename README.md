@@ -5,8 +5,15 @@
 <br>
 
 
-## Project Description
-Analyze employee attrition using SQL and Python with IBM's HR Analytics dataset.
+## 📘 Project Description
+This project explores why employees leave by analyzing IBM’s HR Analytics dataset using SQL and Python. The goal was to find meaningful patterns in attrition across departments, roles, income, and satisfaction levels.
+
+### Key steps:
+- Cleaned and structured the raw CSV data into a relational database using MySQL  
+- Wrote 15+ SQL queries to analyze attrition by job role, age, satisfaction, and work-life balance  
+- Visualized trends with Seaborn and Matplotlib, highlighting insights like higher attrition among those working overtime or with low satisfaction  
+- Summarized findings to help HR teams better understand turnover and improve retention strategies  
+- Delivered an end-to-end analysis that turns employee data into actionable insights through clear visuals and storytelling  
 
 ---
 
