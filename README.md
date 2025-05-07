@@ -36,9 +36,9 @@ employee_attrition_project/
 ## 🧰 Technologies
 
 - Python (Pandas, Matplotlib, Seaborn)
-- SQL (SQLite/PostgreSQL)
+- SQL (MySQL)
 - CSV data format
-- Optional: Streamlit, Scikit-learn
+
 
 ---
 
