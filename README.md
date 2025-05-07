@@ -1,4 +1,4 @@
-# Employee Attraction / Retention Prediction
+# Employee Attraction / Retention Analysis
 <img src="https://github.com/user-attachments/assets/dd9b5455-50ac-4186-b23a-5d60b935479e" alt="Employee-Attrition" width="400" />
 
 <br>
