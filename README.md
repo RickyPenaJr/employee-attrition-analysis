@@ -63,6 +63,8 @@ SELECT Attrition, COUNT(*) AS Count FROM employees GROUP BY Attrition;
 ```
 ✅ ~16% of employees have left the company.
 
+<br>
+<br>
 
 #### 2. Which department has the highest attrition?
 ```sql
